@@ -1,154 +1,176 @@
-.CalcContainer {
-  background-color: #aad7ec;
+.calculator {
+  background-color: #85D2D0;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
-  max-width: 350px; 
+  max-width: 350px;
   padding: 25px;
   border-radius: 15px;
-  border: solid 10px #898787;
-  box-shadow: rgba(1, 1, 1, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
-  background-image: radial-gradient(ellipse, #000000, #0070be);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #000000; 
 }
 
-.CalcDisplay {
-  height: 80px;
-  background-color: #0070be;
-  font-size: 2.5em;
-  color: #fff;
-  text-align: right;
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: rgb(69, 74, 78) 3px 3px 6px 0px inset, rgba(100, 97, 97, 0.5) -3px -3px 6px 1px inset;
+.display {
+  background-color: #887BB0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius:10px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.SurnameButtonContainer {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+.output {
+  font-size: 2em;
+  color: #272525;
+  text-align: left; 
+  padding-left: 10px;
+}
+
+.input {
+  font-size: 1.5em;
+  color: #272525;
   margin-top: 10px;
-  text-align: center; 
-  height: 100px; 
+  text-align: right; 
+  padding-left: 10px;
 }
 
-.SurnameButtonContainer button {
-  margin: 9px; 
-  padding: 10px 20px; 
-  width: 150%; 
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.ButtonContainer {
+.button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
+  justify-items: center;
 }
 
 button {
-  background-color: #0070be;
-  color: #000000;
+  background-color: #887BB0;
+  color: #272525;
   font-size: 1.5em;
   font-weight: bold;
   height: 60px;
-  margin-bottom: 0 auto;
+  width: 70px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.button-plus{
-  background-color: #000785;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}
-
-.button-minus{
-  background-color: #000785;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}
-
-.button-multiply{
-  background-color: #000785;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}
-
-.button-divide{
-  background-color: #000785;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}
-
-.button-clear{
-  background-color: #e57d38;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
-}
-
-.button-equal{
-  background-color: #000000;
-  color: #d8d8d8;
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 60px;
-  margin-bottom: 0 auto;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+  box-shadow: rgba(50, 50, 93, 0.25) 10px 70px 160px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #000000;
-  color: #fff;
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+
+.SurnameButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.SurnameButtonContainer .SurnameButton {
+  text-align: center; 
+}
+
+.SurnameButtonContainer .SurnameButton button {
+  background-color: #887BB0;
+  font-size: 2em;
+  font-weight: bold;
+  height: 40px;
+  width: auto; 
+  padding: 0 20px; 
+  margin: 0; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.SurnameButtonContainer .SurnameButton button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+
+.button-plus{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+} 
+.button-minus{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+ .button-multiply{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+ } 
+ .button-clear{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+ }
+ .button-equal{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+ }
+ .button-divide{
+  background-color: #887BB0;
+  color: #272525;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 60px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
 }
